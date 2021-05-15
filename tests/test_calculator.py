@@ -1,4 +1,4 @@
-import calculator
+from apps import calculator
 
 
 class TestCalculator:
