@@ -3,10 +3,16 @@ import calculator
 
 class TestCalculator:
     def test_add(self):
-        assert 4 == calculator.add(2, 2)
+        assert calculator.add(2, 2) == 4
 
     def test_substract(self):
-        assert 10 == calculator.substract(20, 10)
+        assert calculator.substract(20, 10) == 10
 
     def test_multiply(self):
-        assert 5 == calculator.multiply(3, 5)
+        assert calculator.multiply(3, 5) == 15
+
+    def test_divisor(self):
+        assert calculator.divisor(24, 12) == 2
+
+    def test_divisor_fail(self):
+        assert calculator.divisor(5, 0) is None
